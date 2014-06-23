@@ -1,7 +1,7 @@
 pkgbase = chrome-pepper-flash
 	pkgdesc = Google Chrome's Pepper Flash plugin for ppapi compatible browsers (stable version)
 	pkgver = 14.0.0.125
-	pkgrel = 3
+	pkgrel = 4
 	url = http://www.google.com/chrome
 	install = chrome-pepper-flash.install
 	arch = i686
