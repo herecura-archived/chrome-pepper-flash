@@ -1,6 +1,6 @@
 pkgbase = chrome-pepper-flash
 	pkgdesc = Google Chrome's Pepper Flash plugin for ppapi compatible browsers (stable version)
-	pkgver = 15.0.0.152
+	pkgver = 15.0.0.189
 	pkgrel = 1
 	url = http://www.google.com/chrome
 	install = chrome-pepper-flash.install
@@ -9,11 +9,17 @@ pkgbase = chrome-pepper-flash
 	license = custom:chrome
 	depends = gcc-libs
 	optdepends = pulseaudio-alsa: For PulseAudio users
-	provides = chromium-pepper-flash=15.0.0.152
-	provides = chromium-pepper-flash-stable=15.0.0.152
+	provides = chromium-pepper-flash=15.0.0.189
+	provides = chromium-pepper-flash-stable=15.0.0.189
 	replaces = chromium-pepper-flash-stable
-	source = license.html::http://www.google.com/chrome/intl/en/eula_text.html
-	sha1sums = SKIP
+	noextract = google-chrome-stable_38.0.2125.104_i386.deb
+	noextract = google-chrome-stable_38.0.2125.104_amd64.deb
+	source = google-chrome-stable_38.0.2125.104_i386.deb::http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_38.0.2125.104-1_i386.deb
+	source = google-chrome-stable_38.0.2125.104_amd64.deb::http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_38.0.2125.104-1_amd64.deb
+	source = http://www.google.com/chrome/intl/en/eula_text.html
+	sha256sums = be6cbc3ea91f1c47e88d5a54a4e2126492453072a60e322f28ae5d475634a45c
+	sha256sums = a85e89a781405fcf4925a2691dd953fabae400c0600397c7c808933368aacb83
+	sha256sums = 4242ecd421c56d47e56f6384be5621fe4e7b772c11036a72145d0e580a0f464c
 
 pkgname = chrome-pepper-flash
 
