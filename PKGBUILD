@@ -2,9 +2,9 @@
 
 pkgname=chrome-pepper-flash
 pkgdesc="Google Chrome's Pepper Flash plugin for ppapi compatible browsers (stable version)"
-pkgver=20.0.0.228
+pkgver=20.0.0.306
 pkgrel=1
-_verbld=47.0.2526.106
+_verbld=48.0.2564.109
 _channel='stable'
 arch=('i686' 'x86_64')
 url="http://www.google.com/chrome"
@@ -26,9 +26,9 @@ noextract=(
 	"google-chrome-${_channel}_${_verbld}_i386.deb"
 	"google-chrome-${_channel}_${_verbld}_amd64.deb"
 )
-sha256sums=('168de6fe1f98ab00f73e8a370796b57a8977130ebde7e85ef4de7d8a7a695b93'
-            'a9d9307f90a0d5a1129df8b6478837876275298c545c28c60a697cc577422288'
-            '4242ecd421c56d47e56f6384be5621fe4e7b772c11036a72145d0e580a0f464c')
+sha256sums=('e4d8652972d468c07f517617b13e15ad7d8e5d3f3d01bf0ac4862a6652ec3087'
+            'ba3fd26b9aafc5b747c979cf3abd5775e671b9088d5779d4a45c0a5b87f51aa6'
+            'b35811bb330576631e64f7885c66720e0be4ca81afb04328b3a0f288a708e37f')
 
 prepare() {
 	ar x "google-chrome-${_channel}_${_verbld}_${_arch}.deb"
